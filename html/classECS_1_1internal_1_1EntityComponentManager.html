@@ -117,8 +117,10 @@ $(function(){initNavTree('classECS_1_1internal_1_1EntityComponentManager.html','
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a38266a7d286ec8714103d6d6f582aff2" id="r_a38266a7d286ec8714103d6d6f582aff2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38266a7d286ec8714103d6d6f582aff2">EntityComponentManager</a> (EntityId reservedEntities=10, size_t minSetSize=100, size_t setSize=10024)</td></tr>
+<tr class="memdesc:a38266a7d286ec8714103d6d6f582aff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity Component <a class="el" href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22" title="The main entry point into the ECS. Used to add, query, and remove components and component sets,...">Manager</a> constructor.  <br /></td></tr>
 <tr class="separator:a38266a7d286ec8714103d6d6f582aff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63d37003ce745e79c55c5e56384550fe" id="r_a63d37003ce745e79c55c5e56384550fe"><td class="memItemLeft" align="right" valign="top">EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63d37003ce745e79c55c5e56384550fe">createEntity</a> ()</td></tr>
+<tr class="memdesc:a63d37003ce745e79c55c5e56384550fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new unique entity id.  <br /></td></tr>
 <tr class="separator:a63d37003ce745e79c55c5e56384550fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f16aafb041b883455cc892613e7e76a" id="r_a2f16aafb041b883455cc892613e7e76a"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Args&gt; </td></tr>
 <tr class="memitem:a2f16aafb041b883455cc892613e7e76a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2f16aafb041b883455cc892613e7e76a">add</a> (EntityId eId, Args... args)</td></tr>
@@ -126,6 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f16aafb041b883455cc892613e7e76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa942f4bd99ec7b04ad477234c9c732" id="r_a6aa942f4bd99ec7b04ad477234c9c732"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Args&gt; </td></tr>
 <tr class="memitem:a6aa942f4bd99ec7b04ad477234c9c732"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6aa942f4bd99ec7b04ad477234c9c732">overwrite</a> (EntityId eId, Args... args)</td></tr>
+<tr class="memdesc:a6aa942f4bd99ec7b04ad477234c9c732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites a components instance for the specified entity.  <br /></td></tr>
 <tr class="separator:a6aa942f4bd99ec7b04ad477234c9c732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90d9411f287be9821ac50d2e74b32afb" id="r_a90d9411f287be9821ac50d2e74b32afb"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:a90d9411f287be9821ac50d2e74b32afb"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="classECS_1_1internal_1_1ComponentsWrapper.html">Components</a>&lt; T &gt; &amp;... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a90d9411f287be9821ac50d2e74b32afb">get</a> (EntityId eId)</td></tr>
@@ -138,10 +141,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8ab0d861c88198dfdf1e4437f0c523a" id="r_ad8ab0d861c88198dfdf1e4437f0c523a"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; <br />
 requires (<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#a3715e611270bb1a1d3a801105e9eb01d">Utilities::isUnique</a>&lt;T&gt;())</td></tr>
 <tr class="memitem:ad8ab0d861c88198dfdf1e4437f0c523a"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; EntityId, <a class="el" href="classECS_1_1internal_1_1ComponentsWrapper.html">Components</a>&lt; T &gt; &amp; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad8ab0d861c88198dfdf1e4437f0c523a">getUnique</a> ()</td></tr>
-<tr class="memdesc:ad8ab0d861c88198dfdf1e4437f0c523a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a specified UNIQUE component.  <br /></td></tr>
+<tr class="memdesc:ad8ab0d861c88198dfdf1e4437f0c523a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a specified unique component.  <br /></td></tr>
 <tr class="separator:ad8ab0d861c88198dfdf1e4437f0c523a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25fb5373c770b6bb0b0c701d35f631a4" id="r_a25fb5373c770b6bb0b0c701d35f631a4"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Ts&gt; </td></tr>
 <tr class="memitem:a25fb5373c770b6bb0b0c701d35f631a4"><td class="memTemplItemLeft" align="right" valign="top">const std::vector&lt; EntityId &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a25fb5373c770b6bb0b0c701d35f631a4">getEntityIds</a> ()</td></tr>
+<tr class="memdesc:a25fb5373c770b6bb0b0c701d35f631a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entity ids which are persistent across all specified component types.  <br /></td></tr>
 <tr class="separator:a25fb5373c770b6bb0b0c701d35f631a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d25f9c3e07b337792cc6d425eae67f5" id="r_a2d25f9c3e07b337792cc6d425eae67f5"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a2d25f9c3e07b337792cc6d425eae67f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classECS_1_1internal_1_1Grouping.html">ComponentSetGroup</a>&lt; Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2d25f9c3e07b337792cc6d425eae67f5">getGroup</a> ()</td></tr>
@@ -232,6 +236,16 @@ template&lt;typename EntityId&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Entity Component <a class="el" href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22" title="The main entry point into the ECS. Used to add, query, and remove components and component sets,...">Manager</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reservedEntities</td><td>- Number of entity ids to keep in reserve, starting from 1 </td></tr>
+    <tr><td class="paramname">minSetSize</td><td>- Minimum number of elements a set should contain </td></tr>
+    <tr><td class="paramname">setSize</td><td>- Specific number of elements a set should contain in most cases </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -334,6 +348,12 @@ template&lt;typename... Ts&gt; </div>
 </div><div class="memdoc">
 
 <p>Clear entire component sets. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>- Component types </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -365,6 +385,12 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Check whether or not the component set contains the entity id. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- Component type</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Entity</td><td>Id</td></tr>
@@ -400,6 +426,9 @@ template&lt;typename EntityId&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Creates a new unique entity id. </p>
+<dl class="section return"><dt>Returns</dt><dd>EntityId </dd></dl>
+
 </div>
 </div>
 <a id="ae9e852c57c3637a3603203b117a71893" name="ae9e852c57c3637a3603203b117a71893"></a>
@@ -430,6 +459,12 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Check whether or not the component set exists. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- Component type</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Bool - true if component set exists </dd></dl>
 
 </div>
@@ -462,6 +497,13 @@ template&lt;typename... T&gt; </div>
 </div><div class="memdoc">
 
 <p>Get specified components for the entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>- Component types </td></tr>
+    <tr><td class="paramname">Ids</td><td>- Variadiac id arguments</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Entity</td><td>Id</td></tr>
@@ -504,8 +546,20 @@ template&lt;typename T, typename... Ids&gt; </div>
 </div><div class="memdoc">
 
 <p>Get a specified component for multiple entities. </p>
-<p>@params Entity IDs</p>
-<dl class="section return"><dt>Returns</dt><dd>Tuple of component references </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- Component type </td></tr>
+    <tr><td class="paramname">Ids</td><td>- Variadiac id arguments</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Entity</td><td>ids</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple of components </dd></dl>
 
 </div>
 </div>
@@ -537,7 +591,13 @@ template&lt;typename... Ts&gt; </div>
 </div><div class="memdoc">
 
 <p>Gets entire component sets. </p>
-<dl class="section return"><dt>Returns</dt><dd>Container of component sets </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>- Component types</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::tuple of component sets </dd></dl>
 
 </div>
 </div>
@@ -567,6 +627,15 @@ template&lt;typename T, typename... Ts&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the entity ids which are persistent across all specified component types. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- Variadiac type arguments</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;EntityId&gt; Entity ids </dd></dl>
 
 </div>
 </div>
@@ -599,6 +668,12 @@ template&lt;typename... Ts&gt; </div>
 
 <p>Find overlapping entities for the specified types. </p>
 <p>Creates a group of entities with all of the specified types in common</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>- Component types</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classECS_1_1internal_1_1Grouping.html" title="A grouping of entities which have all of the specified components.">Grouping</a> of entities </dd></dl>
 
 </div>
@@ -631,7 +706,13 @@ requires (<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#a3715e6
 </table>
 </div><div class="memdoc">
 
-<p>Get a specified UNIQUE component. </p>
+<p>Get a specified unique component. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- Component type</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>std::pair containing the entity id and component reference </dd></dl>
 
 </div>
@@ -694,6 +775,15 @@ template&lt;typename T, typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Overwrites a components instance for the specified entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Entity</td><td>Id </td></tr>
+    <tr><td class="paramname">Variable</td><td>arguments for the component constructor </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4e9a511b08c794284122af75fee83091" name="a4e9a511b08c794284122af75fee83091"></a>
@@ -724,6 +814,12 @@ template&lt;typename... Ts&gt; </div>
 </div><div class="memdoc">
 
 <p>Iterate over and remove empty components from the specified sets. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>- Component types </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -755,6 +851,12 @@ template&lt;typename T&gt; </div>
 </div><div class="memdoc">
 
 <p>Stores a transformation function for the specified component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a></td><td>function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -786,6 +888,12 @@ template&lt;typename... Ts&gt; </div>
 </div><div class="memdoc">
 
 <p>Remove specified ids from each specified set. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>- Component types </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -846,6 +954,12 @@ template&lt;typename... Ts&gt; </div>
 </div><div class="memdoc">
 
 <p>Remove the id from each specified set. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>- Component types </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -877,6 +991,13 @@ template&lt;typename... Ts, typename... Ids&gt; </div>
 </div><div class="memdoc">
 
 <p>Remove specified ids from each specified set. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>- Component types </td></tr>
+    <tr><td class="paramname">Ids</td><td>- Variadic ids arguments </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -908,6 +1029,12 @@ template&lt;typename... Ids&gt; </div>
 </div><div class="memdoc">
 
 <p>Remove specified ids from EVERY set. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ids</td><td>- Variadic ids arguments </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

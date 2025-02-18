@@ -122,12 +122,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac7b63805024efcd22784d044e1838062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a167f06e7ce629d8f847d2605ab9bf7ee" id="r_a167f06e7ce629d8f847d2605ab9bf7ee"><td class="memTemplParams" colspan="2">template&lt;typename Func&gt; </td></tr>
 <tr class="memitem:a167f06e7ce629d8f847d2605ab9bf7ee"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a167f06e7ce629d8f847d2605ab9bf7ee">each</a> (Func &amp;&amp;fn)</td></tr>
+<tr class="memdesc:a167f06e7ce629d8f847d2605ab9bf7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over component set and pass the entity components into the function.  <br /></td></tr>
 <tr class="separator:a167f06e7ce629d8f847d2605ab9bf7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5015748e1773428aa179f4749aeeb346" id="r_a5015748e1773428aa179f4749aeeb346"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5015748e1773428aa179f4749aeeb346">size</a> () const</td></tr>
+<tr class="memdesc:a5015748e1773428aa179f4749aeeb346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of entities which share all specified component types.  <br /></td></tr>
 <tr class="separator:a5015748e1773428aa179f4749aeeb346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad5db3c3c6b090ef3358df596c74eeb" id="r_a4ad5db3c3c6b090ef3358df596c74eeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ad5db3c3c6b090ef3358df596c74eeb">operator bool</a> () const</td></tr>
+<tr class="memdesc:a4ad5db3c3c6b090ef3358df596c74eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate by number of entities.  <br /></td></tr>
 <tr class="separator:a4ad5db3c3c6b090ef3358df596c74eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e64c227ddd218805e5e76e4a8188225" id="r_a4e64c227ddd218805e5e76e4a8188225"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; EntityId &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e64c227ddd218805e5e76e4a8188225">getIds</a> () const</td></tr>
+<tr class="memdesc:a4e64c227ddd218805e5e76e4a8188225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference of the entity ids.  <br /></td></tr>
 <tr class="separator:a4e64c227ddd218805e5e76e4a8188225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -220,6 +224,14 @@ template&lt;typename Func&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Iterate over component set and pass the entity components into the function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Function</td><td>which accepts the entity id and component types </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4e64c227ddd218805e5e76e4a8188225" name="a4e64c227ddd218805e5e76e4a8188225"></a>
@@ -246,6 +258,9 @@ template&lt;typename EntityId, typename... Ts&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get a const reference of the entity ids. </p>
+<dl class="section return"><dt>Returns</dt><dd>const std::vector&lt;EntityId&gt; </dd></dl>
 
 </div>
 </div>
@@ -274,6 +289,9 @@ template&lt;typename EntityId, typename... Ts&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Evaluate by number of entities. </p>
+<dl class="section return"><dt>Returns</dt><dd>size_t </dd></dl>
+
 </div>
 </div>
 <a id="a5015748e1773428aa179f4749aeeb346" name="a5015748e1773428aa179f4749aeeb346"></a>
@@ -300,6 +318,9 @@ template&lt;typename EntityId, typename... Ts&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the number of entities which share all specified component types. </p>
+<dl class="section return"><dt>Returns</dt><dd>size_t </dd></dl>
 
 </div>
 </div>
