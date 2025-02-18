@@ -4,7 +4,6 @@ var utilities_8hpp =
     [ "ECS::internal::Utilities::EnumStringConverter< EnumValue, ENUM_STRING_MAX_SIZE >", "structECS_1_1internal_1_1Utilities_1_1EnumStringConverter_3_01EnumValue_00_01ENUM__STRING__MAX__SIZE_01_4.html", "structECS_1_1internal_1_1Utilities_1_1EnumStringConverter_3_01EnumValue_00_01ENUM__STRING__MAX__SIZE_01_4" ],
     [ "ECS::internal::Utilities::ReturnsBool", "conceptECS_1_1internal_1_1Utilities_1_1ReturnsBool.html", null ],
     [ "ECS::internal::Utilities::_assert", "namespaceECS_1_1internal_1_1Utilities.html#af705ab54dd9a07800fbf57bfbc97673e", null ],
-    [ "ECS::internal::Utilities::benchmarkPrint", "namespaceECS_1_1internal_1_1Utilities.html#a39eb4c9af4e3d2bdd58af1c038a7c5b0", null ],
     [ "ECS::internal::Utilities::debugWarningPrint", "namespaceECS_1_1internal_1_1Utilities.html#a96d23ab6d3ad35bd2407259942693b09", null ],
     [ "ECS::internal::Utilities::getEnumArray", "namespaceECS_1_1internal_1_1Utilities.html#af4b513456073cefc32bfeaa3e00b3577", null ],
     [ "ECS::internal::Utilities::getEnumSize", "namespaceECS_1_1internal_1_1Utilities.html#a1e80693df49b9d8ac80630c7cc6d16cd", null ],

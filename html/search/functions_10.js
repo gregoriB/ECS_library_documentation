@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timer_0',['Timer',['../classECS_1_1internal_1_1Utilities_1_1Timer.html#af323e368f4610c80f1f03e3a4f93d25a',1,'ECS::internal::Utilities::Timer']]]
+  ['update_0',['update',['../classECS_1_1internal_1_1Utilities_1_1Timer.html#a1486eb825c441f328f2b991fcaed53a2',1,'ECS::internal::Utilities::Timer']]]
 ];

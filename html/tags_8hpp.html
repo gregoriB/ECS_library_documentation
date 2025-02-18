@@ -110,7 +110,8 @@ $(function(){initNavTree('tags_8hpp.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">tags.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="timer_8hpp_source.html">timer.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="components_8hpp_source.html">components.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8hpp_source.html">timer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="utilities_8hpp_source.html">utilities.hpp</a>&quot;</code><br />
 </div>
 <p><a href="tags_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -118,18 +119,25 @@ $(function(){initNavTree('tags_8hpp.html',''); initResizable(true); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structECS_1_1Tags_1_1Stack.html">ECS::Tags::Stack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces components to be arranged together in a vector.  <a href="structECS_1_1Tags_1_1Stack.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structECS_1_1Tags_1_1Event.html">ECS::Tags::Event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Always stacks unless specifically tagged otherwise. Intended to be used with transient components which needs to be batch-removed.  <a href="structECS_1_1Tags_1_1Event.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structECS_1_1Tags_1_1NoStack.html">ECS::Tags::NoStack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents components from stacking to allow for only a single instance of a component per entity. Also gives access to a few additional accessor methods.  <a href="structECS_1_1Tags_1_1NoStack.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structECS_1_1Tags_1_1Transform.html">ECS::Tags::Transform</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables component transformation pipelines as the default behavior when a component is accessed.  <a href="structECS_1_1Tags_1_1Transform.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structECS_1_1Tags_1_1Required.html">ECS::Tags::Required</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will cause a failed assertion if the component does not exist.  <a href="structECS_1_1Tags_1_1Required.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structECS_1_1Tags_1_1Unique.html">ECS::Tags::Unique</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will enforce that only a single instance of a component exists at any given time. Also provides a more convenient access method.  <a href="structECS_1_1Tags_1_1Unique.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structECS_1_1Tags_1_1Effect.html">ECS::Tags::Effect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has no special behavior within the library. This is a purely game logic component.  <a href="structECS_1_1Tags_1_1Effect.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>

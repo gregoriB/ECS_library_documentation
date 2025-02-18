@@ -24,5 +24,5 @@ var annotated_dup =
       ] ]
     ] ],
     [ "BaseSparseSet", "classBaseSparseSet.html", "classBaseSparseSet" ],
-    [ "ComponentIterator", "classComponentIterator.html", "classComponentIterator" ]
+    [ "ComponentsIterator", "classComponentsIterator.html", "classComponentsIterator" ]
 ];

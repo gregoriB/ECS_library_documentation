@@ -1,6 +1,6 @@
 var components__iterator_8hpp =
 [
-    [ "ComponentIterator< T >", "classComponentIterator.html", "classComponentIterator" ],
+    [ "ComponentsIterator< T >", "classComponentsIterator.html", "classComponentsIterator" ],
     [ "Arrangement", "components__iterator_8hpp.html#ac4d32be4f663e5f65aa208c47e1faa81", [
       [ "EMPTY", "components__iterator_8hpp.html#ac4d32be4f663e5f65aa208c47e1faa81aba2b45bdc11e2a4a6e86aab2ac693cbb", null ],
       [ "TRANSFORMED", "components__iterator_8hpp.html#ac4d32be4f663e5f65aa208c47e1faa81a0fdd493bed5a4a53ad5ccaa889f4e19a", null ],

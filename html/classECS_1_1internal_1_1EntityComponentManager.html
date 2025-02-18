@@ -109,6 +109,9 @@ $(function(){initNavTree('classECS_1_1internal_1_1EntityComponentManager.html','
 </div><!--header-->
 <div class="contents">
 
+<p>The main entry point into the <a class="el" href="namespaceECS.html">ECS</a>. Used to add, query, and remove components and component sets, as well as perform other operations.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="entity__component__manager_8hpp_source.html">entity_component_manager.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -160,6 +163,12 @@ requires (<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#a3715e6
 <tr class="memitem:aeeadf75cb4ddba9c8854b404d423a18b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aeeadf75cb4ddba9c8854b404d423a18b">clear</a> ()</td></tr>
 <tr class="memdesc:aeeadf75cb4ddba9c8854b404d423a18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear entire component sets.  <br /></td></tr>
 <tr class="separator:aeeadf75cb4ddba9c8854b404d423a18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec729f2c591c63e18fa48a0df851de88" id="r_aec729f2c591c63e18fa48a0df851de88"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:aec729f2c591c63e18fa48a0df851de88"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aec729f2c591c63e18fa48a0df851de88">removeIds</a> (const std::vector&lt; EntityId &gt; &amp;ids)</td></tr>
+<tr class="separator:aec729f2c591c63e18fa48a0df851de88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afae4dfe063eec8bc96bc15872612c9" id="r_a0afae4dfe063eec8bc96bc15872612c9"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Ids&gt; </td></tr>
+<tr class="memitem:a0afae4dfe063eec8bc96bc15872612c9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0afae4dfe063eec8bc96bc15872612c9">removeIds</a> (Ids... ids)</td></tr>
+<tr class="separator:a0afae4dfe063eec8bc96bc15872612c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548a8b7bb48af4c2d3d51cc2d1583c9b" id="r_a548a8b7bb48af4c2d3d51cc2d1583c9b"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a548a8b7bb48af4c2d3d51cc2d1583c9b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a548a8b7bb48af4c2d3d51cc2d1583c9b">remove</a> (const std::vector&lt; EntityId &gt; &amp;ids)</td></tr>
 <tr class="memdesc:a548a8b7bb48af4c2d3d51cc2d1583c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove specified ids from each specified set.  <br /></td></tr>
@@ -192,7 +201,10 @@ requires (<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#a3715e6
 <tr class="memitem:ac39b3eb90d5fa0f7e91c620de22205af" id="r_ac39b3eb90d5fa0f7e91c620de22205af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classECS_1_1internal_1_1EntityComponentManager.html">EntityComponentManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac39b3eb90d5fa0f7e91c620de22205af">operator=</a> (const <a class="el" href="classECS_1_1internal_1_1EntityComponentManager.html">EntityComponentManager</a> &amp;)=delete</td></tr>
 <tr class="separator:ac39b3eb90d5fa0f7e91c620de22205af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename EntityId&gt;<br />
+class ECS::internal::EntityComponentManager&lt; EntityId &gt;</div><p>The main entry point into the <a class="el" href="namespaceECS.html">ECS</a>. Used to add, query, and remove components and component sets, as well as perform other operations. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a38266a7d286ec8714103d6d6f582aff2" name="a38266a7d286ec8714103d6d6f582aff2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38266a7d286ec8714103d6d6f582aff2">&#9670;&#160;</a></span>EntityComponentManager() <span class="overload">[1/2]</span></h2>
 
@@ -593,7 +605,7 @@ template&lt;typename... Ts&gt; </div>
 
 <p>Find overlapping entities for the specified types. </p>
 <p>Creates a group of entities with all of the specified types in common</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classECS_1_1internal_1_1Grouping.html">Grouping</a> of entities </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classECS_1_1internal_1_1Grouping.html" title="A grouping of entities which have all of the specified components.">Grouping</a> of entities </dd></dl>
 
 </div>
 </div>
@@ -902,6 +914,64 @@ template&lt;typename... Ids&gt; </div>
 </div><div class="memdoc">
 
 <p>Remove specified ids from EVERY set. </p>
+
+</div>
+</div>
+<a id="aec729f2c591c63e18fa48a0df851de88" name="aec729f2c591c63e18fa48a0df851de88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec729f2c591c63e18fa48a0df851de88">&#9670;&#160;</a></span>removeIds() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EntityId&gt; </div>
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classECS_1_1internal_1_1EntityComponentManager.html">ECS::internal::EntityComponentManager</a>&lt; EntityId &gt;::removeIds </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; EntityId &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>ids</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0afae4dfe063eec8bc96bc15872612c9" name="a0afae4dfe063eec8bc96bc15872612c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afae4dfe063eec8bc96bc15872612c9">&#9670;&#160;</a></span>removeIds() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename EntityId&gt; </div>
+<div class="memtemplate">
+template&lt;typename T, typename... Ids&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classECS_1_1internal_1_1EntityComponentManager.html">ECS::internal::EntityComponentManager</a>&lt; EntityId &gt;::removeIds </td>
+          <td>(</td>
+          <td class="paramtype">Ids...</td>          <td class="paramname"><span class="paramname"><em>ids</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

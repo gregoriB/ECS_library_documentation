@@ -120,15 +120,19 @@ Namespaces</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ac8190d0bff6eb1ad05649e13df2b894a" id="r_ac8190d0bff6eb1ad05649e13df2b894a"><td class="memTemplParams" colspan="2">template&lt;typename EntityId, typename T&gt; </td></tr>
 <tr class="memitem:ac8190d0bff6eb1ad05649e13df2b894a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac8190d0bff6eb1ad05649e13df2b894a">Set</a> = <a class="el" href="classECS_1_1internal_1_1SparseSet.html">internal::SparseSet</a>&lt;EntityId, T&gt;</td></tr>
+<tr class="memdesc:ac8190d0bff6eb1ad05649e13df2b894a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sparse set for storing components of the same type.  <br /></td></tr>
 <tr class="separator:ac8190d0bff6eb1ad05649e13df2b894a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0abd5d7309662b53fd28fc08c860c22" id="r_ab0abd5d7309662b53fd28fc08c860c22"><td class="memTemplParams" colspan="2">template&lt;typename EntityId&gt; </td></tr>
 <tr class="memitem:ab0abd5d7309662b53fd28fc08c860c22"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab0abd5d7309662b53fd28fc08c860c22">Manager</a> = <a class="el" href="classECS_1_1internal_1_1EntityComponentManager.html">internal::EntityComponentManager</a>&lt;EntityId&gt;</td></tr>
+<tr class="memdesc:ab0abd5d7309662b53fd28fc08c860c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main entry point into the <a class="el" href="namespaceECS.html">ECS</a>. Used to add, query, and remove components and component sets, as well as perform other operations.  <br /></td></tr>
 <tr class="separator:ab0abd5d7309662b53fd28fc08c860c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa984936ecf32963ad0b2e575987fb375" id="r_aa984936ecf32963ad0b2e575987fb375"><td class="memTemplParams" colspan="2">template&lt;typename EntityId, typename T&gt; </td></tr>
 <tr class="memitem:aa984936ecf32963ad0b2e575987fb375"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa984936ecf32963ad0b2e575987fb375">Group</a> = <a class="el" href="classECS_1_1internal_1_1Grouping.html">internal::Grouping</a>&lt;EntityId, T&gt;</td></tr>
+<tr class="memdesc:aa984936ecf32963ad0b2e575987fb375"><td class="mdescLeft">&#160;</td><td class="mdescRight">A grouping of entities which have all of the specified components.  <br /></td></tr>
 <tr class="separator:aa984936ecf32963ad0b2e575987fb375"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a1aad4f3fe01418e88d77268e65ad80" id="r_a3a1aad4f3fe01418e88d77268e65ad80"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a3a1aad4f3fe01418e88d77268e65ad80"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3a1aad4f3fe01418e88d77268e65ad80">Components</a> = <a class="el" href="classECS_1_1internal_1_1ComponentsWrapper.html">internal::ComponentsWrapper</a>&lt;T&gt;</td></tr>
+<tr class="memdesc:a3a1aad4f3fe01418e88d77268e65ad80"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper for a component of the specific type. The wrapper controls how the component is arranged and provides access methods for the component data.  <br /></td></tr>
 <tr class="separator:a3a1aad4f3fe01418e88d77268e65ad80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -145,6 +149,7 @@ template&lt;typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>A wrapper for a component of the specific type. The wrapper controls how the component is arranged and provides access methods for the component data. </p>
 
 </div>
@@ -162,6 +167,7 @@ template&lt;typename EntityId, typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>A grouping of entities which have all of the specified components. </p>
 
 </div>
@@ -179,6 +185,7 @@ template&lt;typename EntityId&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>The main entry point into the <a class="el" href="namespaceECS.html">ECS</a>. Used to add, query, and remove components and component sets, as well as perform other operations. </p>
 
 </div>
@@ -196,6 +203,7 @@ template&lt;typename EntityId, typename T&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>A sparse set for storing components of the same type. </p>
 
 </div>

@@ -5,7 +5,6 @@ var namespaceECS_1_1internal_1_1Utilities =
     [ "Timer", "classECS_1_1internal_1_1Utilities_1_1Timer.html", "classECS_1_1internal_1_1Utilities_1_1Timer" ],
     [ "ReturnsBool", "conceptECS_1_1internal_1_1Utilities_1_1ReturnsBool.html", null ],
     [ "_assert", "namespaceECS_1_1internal_1_1Utilities.html#af705ab54dd9a07800fbf57bfbc97673e", null ],
-    [ "benchmarkPrint", "namespaceECS_1_1internal_1_1Utilities.html#a39eb4c9af4e3d2bdd58af1c038a7c5b0", null ],
     [ "debugWarningPrint", "namespaceECS_1_1internal_1_1Utilities.html#a96d23ab6d3ad35bd2407259942693b09", null ],
     [ "getEnumArray", "namespaceECS_1_1internal_1_1Utilities.html#af4b513456073cefc32bfeaa3e00b3577", null ],
     [ "getEnumSize", "namespaceECS_1_1internal_1_1Utilities.html#a1e80693df49b9d8ac80630c7cc6d16cd", null ],

@@ -7,7 +7,7 @@ var hierarchy =
     [ "BaseSparseSet< Id, ComponentsWrapper< DefaultComponent > >", "classBaseSparseSet.html", [
       [ "ECS::internal::SparseSet< Id, T >", "classECS_1_1internal_1_1SparseSet.html", null ]
     ] ],
-    [ "ComponentIterator< T >", "classComponentIterator.html", null ],
+    [ "ComponentsIterator< T >", "classComponentsIterator.html", null ],
     [ "ECS::internal::ComponentsWrapper< T >", "classECS_1_1internal_1_1ComponentsWrapper.html", null ],
     [ "ECS::internal::DefaultComponent", "structECS_1_1internal_1_1DefaultComponent.html", null ],
     [ "ECS::Tags::Effect", "structECS_1_1Tags_1_1Effect.html", null ],

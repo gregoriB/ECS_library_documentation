@@ -114,10 +114,12 @@ $(function(){initNavTree('namespaceECS_1_1internal_1_1Utilities.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classECS_1_1internal_1_1Utilities_1_1EnumStringConverter.html">EnumStringConverter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">meta template convenience class for using enum elements as strings  <a href="classECS_1_1internal_1_1Utilities_1_1EnumStringConverter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structECS_1_1internal_1_1Utilities_1_1EnumStringConverter_3_01EnumValue_00_01ENUM__STRING__MAX__SIZE_01_4.html">EnumStringConverter&lt; EnumValue, ENUM_STRING_MAX_SIZE &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classECS_1_1internal_1_1Utilities_1_1Timer.html">Timer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has no use within the library. This is a purely game logic component.  <a href="classECS_1_1internal_1_1Utilities_1_1Timer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
@@ -177,9 +179,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a96d23ab6d3ad35bd2407259942693b09" id="r_a96d23ab6d3ad35bd2407259942693b09"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a96d23ab6d3ad35bd2407259942693b09"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a96d23ab6d3ad35bd2407259942693b09">debugWarningPrint</a> (const Args &amp;...args)</td></tr>
 <tr class="separator:a96d23ab6d3ad35bd2407259942693b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39eb4c9af4e3d2bdd58af1c038a7c5b0" id="r_a39eb4c9af4e3d2bdd58af1c038a7c5b0"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a39eb4c9af4e3d2bdd58af1c038a7c5b0"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a39eb4c9af4e3d2bdd58af1c038a7c5b0">benchmarkPrint</a> (const Args &amp;...args)</td></tr>
-<tr class="separator:a39eb4c9af4e3d2bdd58af1c038a7c5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af705ab54dd9a07800fbf57bfbc97673e" id="r_af705ab54dd9a07800fbf57bfbc97673e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af705ab54dd9a07800fbf57bfbc97673e">_assert</a> (bool condition, std::string m)</td></tr>
 <tr class="separator:af705ab54dd9a07800fbf57bfbc97673e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -212,33 +211,6 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39eb4c9af4e3d2bdd58af1c038a7c5b0" name="a39eb4c9af4e3d2bdd58af1c038a7c5b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39eb4c9af4e3d2bdd58af1c038a7c5b0">&#9670;&#160;</a></span>benchmarkPrint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ECS::internal::Utilities::benchmarkPrint </td>
-          <td>(</td>
-          <td class="paramtype">const Args &amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -296,6 +268,7 @@ template&lt;typename Enum&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated</a></b></dt><dd>!! This will be removed in a future version - Recommend to use the MagicEnum library instead !! </dd></dl>
 
 </div>
 </div>
@@ -323,6 +296,7 @@ template&lt;typename Enum&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated</a></b></dt><dd>!! This will be removed in a future version - Recommend to use the MagicEnum library instead !! </dd></dl>
 
 </div>
 </div>
@@ -350,7 +324,8 @@ template&lt;typename Enum&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>A convenience that assumes the string definitely exists. BE CAREFUL! </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>!! This will be removed in a future version - Recommend to use the MagicEnum library instead !!</dd></dl>
+<p>A convenience function that assumes the string definitely exists. BE CAREFUL! </p>
 
 </div>
 </div>
@@ -378,6 +353,7 @@ template&lt;typename Enum&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated</a></b></dt><dd>!! This will be removed in a future version - Recommend to use the MagicEnum library instead !! </dd></dl>
 
 </div>
 </div>

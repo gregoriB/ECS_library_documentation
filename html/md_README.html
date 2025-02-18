@@ -132,7 +132,7 @@ Examples Games</h1>
 </ul>
 <h1><a class="anchor" id="autotoc_md4"></a>
 Documentation</h1>
-<p>&ndash; COMING SOON &ndash;</p>
+<p><a href="https://ecslibarydocs.netlify.app/&gt;">Auto-generated with Doxygen</a></p>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Example Usage</h1>
 <p>Creating entities: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>PlayerComponent : <a class="code hl_struct" href="structECS_1_1Tags_1_1Unique.html">ECS::Tags::Unique</a> {};</div>
@@ -157,11 +157,11 @@ Example Usage</h1>
 <div class="line">    cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">add</a>&lt;PositionComponent&gt;(id, x, y);</div>
 <div class="line">    cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">add</a>&lt;MovementComponent&gt;(id, 16.0f, 16.0f);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a2f16aafb041b883455cc892613e7e76a"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">ECS::internal::EntityComponentManager::add</a></div><div class="ttdeci">void add(EntityId eId, Args... args)</div><div class="ttdoc">Constructs and add a component to a set by entity id.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:111</div></div>
-<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a63d37003ce745e79c55c5e56384550fe"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a63d37003ce745e79c55c5e56384550fe">ECS::internal::EntityComponentManager::createEntity</a></div><div class="ttdeci">EntityId createEntity()</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:97</div></div>
-<div class="ttc" id="anamespaceECS_html_ab0abd5d7309662b53fd28fc08c860c22"><div class="ttname"><a href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager</a></div><div class="ttdeci">internal::EntityComponentManager&lt; EntityId &gt; Manager</div><div class="ttdef"><b>Definition</b> ecs.hpp:19</div></div>
-<div class="ttc" id="astructECS_1_1Tags_1_1NoStack_html"><div class="ttname"><a href="structECS_1_1Tags_1_1NoStack.html">ECS::Tags::NoStack</a></div><div class="ttdef"><b>Definition</b> tags.hpp:20</div></div>
-<div class="ttc" id="astructECS_1_1Tags_1_1Unique_html"><div class="ttname"><a href="structECS_1_1Tags_1_1Unique.html">ECS::Tags::Unique</a></div><div class="ttdef"><b>Definition</b> tags.hpp:29</div></div>
+<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a2f16aafb041b883455cc892613e7e76a"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">ECS::internal::EntityComponentManager::add</a></div><div class="ttdeci">void add(EntityId eId, Args... args)</div><div class="ttdoc">Constructs and add a component to a set by entity id.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:114</div></div>
+<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a63d37003ce745e79c55c5e56384550fe"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a63d37003ce745e79c55c5e56384550fe">ECS::internal::EntityComponentManager::createEntity</a></div><div class="ttdeci">EntityId createEntity()</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:100</div></div>
+<div class="ttc" id="anamespaceECS_html_ab0abd5d7309662b53fd28fc08c860c22"><div class="ttname"><a href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager</a></div><div class="ttdeci">internal::EntityComponentManager&lt; EntityId &gt; Manager</div><div class="ttdoc">The main entry point into the ECS. Used to add, query, and remove components and component sets,...</div><div class="ttdef"><b>Definition</b> ecs.hpp:26</div></div>
+<div class="ttc" id="astructECS_1_1Tags_1_1NoStack_html"><div class="ttname"><a href="structECS_1_1Tags_1_1NoStack.html">ECS::Tags::NoStack</a></div><div class="ttdef"><b>Definition</b> tags.hpp:23</div></div>
+<div class="ttc" id="astructECS_1_1Tags_1_1Unique_html"><div class="ttname"><a href="structECS_1_1Tags_1_1Unique.html">ECS::Tags::Unique</a></div><div class="ttdef"><b>Definition</b> tags.hpp:32</div></div>
 </div><!-- fragment --><p> Some system performing updates on entities </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> update(<a class="code hl_typedef" href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager</a> &amp;cm)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">auto</span> group = cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2d25f9c3e07b337792cc6d425eae67f5">getGroup</a>&lt;MovementComponent, PositionComponent&gt;();</div>
@@ -198,8 +198,8 @@ Example Usage</h1>
 <div class="line">            <span class="comment">// Do something special, possibly using the movement/position components</span></div>
 <div class="line">    });</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a2d25f9c3e07b337792cc6d425eae67f5"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a2d25f9c3e07b337792cc6d425eae67f5">ECS::internal::EntityComponentManager::getGroup</a></div><div class="ttdeci">ComponentSetGroup&lt; Ts... &gt; getGroup()</div><div class="ttdoc">Find overlapping entities for the specified types.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:224</div></div>
-<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_ad8ab0d861c88198dfdf1e4437f0c523a"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#ad8ab0d861c88198dfdf1e4437f0c523a">ECS::internal::EntityComponentManager::getUnique</a></div><div class="ttdeci">std::pair&lt; EntityId, Components&lt; T &gt; &amp; &gt; getUnique()</div><div class="ttdoc">Get a specified UNIQUE component.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:170</div></div>
+<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a2d25f9c3e07b337792cc6d425eae67f5"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a2d25f9c3e07b337792cc6d425eae67f5">ECS::internal::EntityComponentManager::getGroup</a></div><div class="ttdeci">ComponentSetGroup&lt; Ts... &gt; getGroup()</div><div class="ttdoc">Find overlapping entities for the specified types.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:227</div></div>
+<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_ad8ab0d861c88198dfdf1e4437f0c523a"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#ad8ab0d861c88198dfdf1e4437f0c523a">ECS::internal::EntityComponentManager::getUnique</a></div><div class="ttdeci">std::pair&lt; EntityId, Components&lt; T &gt; &amp; &gt; getUnique()</div><div class="ttdoc">Get a specified UNIQUE component.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:173</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
 Installation</h1>
 <p>Run the build script to run the automated tests: </p><div class="fragment"><div class="line">$ bash build_and_test.sh</div>
@@ -215,7 +215,7 @@ Development</h1>
 <p>Regarding library development, once I reach a point where the library has the features I've wanted to implement and the user experience has been solidified, I will open it for contributions if there is any interest in that.</p>
 <h1><a class="anchor" id="autotoc_md9"></a>
 License</h1>
-<p>&ndash; FREE AND OPEN SOURCE LICENSE COMING SOON ONCE I HAVE RESEARCHED IT &ndash; </p>
+<p>&ndash; FREE AND OPEN SOURCE LICENSE COMING SOON &ndash; </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

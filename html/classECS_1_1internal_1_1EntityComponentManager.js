@@ -21,5 +21,7 @@ var classECS_1_1internal_1_1EntityComponentManager =
     [ "remove", "classECS_1_1internal_1_1EntityComponentManager.html#a755df4fb798ae70534640acad5151ce2", null ],
     [ "remove", "classECS_1_1internal_1_1EntityComponentManager.html#a2d811e8e1a434d923288cf0332bcd3a4", null ],
     [ "remove", "classECS_1_1internal_1_1EntityComponentManager.html#a1235851ec641aaf23e7c3666ce7e20ed", null ],
-    [ "remove", "classECS_1_1internal_1_1EntityComponentManager.html#afe9c34c519007fbf46f72590022a7a6d", null ]
+    [ "remove", "classECS_1_1internal_1_1EntityComponentManager.html#afe9c34c519007fbf46f72590022a7a6d", null ],
+    [ "removeIds", "classECS_1_1internal_1_1EntityComponentManager.html#aec729f2c591c63e18fa48a0df851de88", null ],
+    [ "removeIds", "classECS_1_1internal_1_1EntityComponentManager.html#a0afae4dfe063eec8bc96bc15872612c9", null ]
 ];
