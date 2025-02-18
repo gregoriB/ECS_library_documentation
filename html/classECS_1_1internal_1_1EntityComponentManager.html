@@ -309,14 +309,22 @@ template&lt;typename T, typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Constructs and add a component to a set by entity id. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Entity</td><td>Id </td></tr>
-    <tr><td class="paramname">Variable</td><td>arguments for the component constructor</td></tr>
+<p>If the component set has not yet been created, it is created before the entity component is added.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>- Component type</td></tr>
+    <tr><td class="paramname">Args</td><td>- Variadic args </td></tr>
+    <tr><td class="paramname">Ids</td><td>- Variadiac id arguments</td></tr>
   </table>
   </dd>
 </dl>
-<p>If the component set has not yet been created, it is created before the entity component is added. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Entity</td><td>Id </td></tr>
+    <tr><td class="paramname">Variable</td><td>arguments for the component constructor </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -559,7 +567,7 @@ template&lt;typename T, typename... Ids&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::tuple of components </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Container of components </dd></dl>
 
 </div>
 </div>
@@ -597,7 +605,7 @@ template&lt;typename... Ts&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::tuple of component sets </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Container of component sets </dd></dl>
 
 </div>
 </div>
@@ -635,7 +643,7 @@ template&lt;typename T, typename... Ts&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::vector&lt;EntityId&gt; Entity ids </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Container of entity ids </dd></dl>
 
 </div>
 </div>
@@ -713,7 +721,7 @@ requires (<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#a3715e6
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::pair containing the entity id and component reference </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Container with the entity id and component </dd></dl>
 
 </div>
 </div>
@@ -776,6 +784,13 @@ template&lt;typename T, typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>Overwrites a components instance for the specified entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Args</td><td>- Variadic args </td></tr>
+    <tr><td class="paramname">Ids</td><td>- Variadiac id arguments</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Entity</td><td>Id </td></tr>
