@@ -136,38 +136,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac287bf3f7d3e4ca0eddebb8870d0a6ce" id="r_ac287bf3f7d3e4ca0eddebb8870d0a6ce"><td class="memTemplParams" colspan="2">template&lt;typename Func&gt; <br />
 requires std::invocable&lt;Func, T &amp;&gt;</td></tr>
 <tr class="memitem:ac287bf3f7d3e4ca0eddebb8870d0a6ce"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac287bf3f7d3e4ca0eddebb8870d0a6ce">mutate</a> (Func &amp;&amp;fn)</td></tr>
-<tr class="memdesc:ac287bf3f7d3e4ca0eddebb8870d0a6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard read/write each function.  <br /></td></tr>
+<tr class="memdesc:ac287bf3f7d3e4ca0eddebb8870d0a6ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard read/write for each function.  <br /></td></tr>
 <tr class="separator:ac287bf3f7d3e4ca0eddebb8870d0a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f758de01780703ab6d68802afa5c6d9" id="r_a2f758de01780703ab6d68802afa5c6d9"><td class="memTemplParams" colspan="2">template&lt;typename Func&gt; <br />
 requires std::invocable&lt;Func, const T &amp;&gt;</td></tr>
 <tr class="memitem:a2f758de01780703ab6d68802afa5c6d9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2f758de01780703ab6d68802afa5c6d9">inspect</a> (Func &amp;&amp;fn, <a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a> behavior=<a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9a5b39c8b553c821e7cddc6da64b5bd2ee">Transformation::DEFAULT</a>)</td></tr>
-<tr class="memdesc:a2f758de01780703ab6d68802afa5c6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only each function.  <br /></td></tr>
+<tr class="memdesc:a2f758de01780703ab6d68802afa5c6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read-only for each function.  <br /></td></tr>
 <tr class="separator:a2f758de01780703ab6d68802afa5c6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb1a6d5c8aaacae18cc4423906cc3b3" id="r_acfb1a6d5c8aaacae18cc4423906cc3b3"><td class="memTemplParams" colspan="2">template&lt;typename P&gt; <br />
 requires (std::invocable&lt;std::decay_t&lt;decltype(fn)&gt;, const T &amp;&gt; &amp;&amp; !<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9ea55b0f2dd9a12cf211dd6da212">Utilities::shouldStack</a>&lt;T&gt;())</td></tr>
 <tr class="memitem:acfb1a6d5c8aaacae18cc4423906cc3b3"><td class="memTemplItemLeft" align="right" valign="top">P&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acfb1a6d5c8aaacae18cc4423906cc3b3">derive</a> (auto &amp;&amp;fn, P fallback, <a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a> behavior=<a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9a5b39c8b553c821e7cddc6da64b5bd2ee">Transformation::DEFAULT</a>)</td></tr>
-<tr class="memdesc:acfb1a6d5c8aaacae18cc4423906cc3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows for creating new derived data from the component.  <br /></td></tr>
+<tr class="memdesc:acfb1a6d5c8aaacae18cc4423906cc3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! Allows for creating new derived data from the component.  <br /></td></tr>
 <tr class="separator:acfb1a6d5c8aaacae18cc4423906cc3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd60aaf09e507d30dc2ad78a30d860d2" id="r_abd60aaf09e507d30dc2ad78a30d860d2"><td class="memTemplParams" colspan="2">template&lt;typename P&gt; <br />
 requires (std::invocable&lt;std::decay_t&lt;decltype(fn)&gt;, const T &amp;&gt; &amp;&amp; !<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9ea55b0f2dd9a12cf211dd6da212">Utilities::shouldStack</a>&lt;T&gt;())</td></tr>
 <tr class="memitem:abd60aaf09e507d30dc2ad78a30d860d2"><td class="memTemplItemLeft" align="right" valign="top">P&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#abd60aaf09e507d30dc2ad78a30d860d2">derive</a> (auto &amp;&amp;fn, <a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a> behavior=<a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9a5b39c8b553c821e7cddc6da64b5bd2ee">Transformation::DEFAULT</a>)</td></tr>
+<tr class="memdesc:abd60aaf09e507d30dc2ad78a30d860d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! Allows for creating new derived data from the component.  <br /></td></tr>
 <tr class="separator:abd60aaf09e507d30dc2ad78a30d860d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5894427fbed2311c4bef453fb805b30" id="r_ae5894427fbed2311c4bef453fb805b30"><td class="memTemplParams" colspan="2">template&lt;typename Prop&gt; <br />
 requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9ea55b0f2dd9a12cf211dd6da212">Utilities::shouldStack</a>&lt;T&gt;())</td></tr>
 <tr class="memitem:ae5894427fbed2311c4bef453fb805b30"><td class="memTemplItemLeft" align="right" valign="top">const Prop &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae5894427fbed2311c4bef453fb805b30">peek</a> (<a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a> behavior, Prop T::*prop)</td></tr>
-<tr class="memdesc:ae5894427fbed2311c4bef453fb805b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a value as readonly FROM A NON-STACKED COMPONENT.  <br /></td></tr>
+<tr class="memdesc:ae5894427fbed2311c4bef453fb805b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
 <tr class="separator:ae5894427fbed2311c4bef453fb805b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a750674dc205c0def361f7681ddfd0083" id="r_a750674dc205c0def361f7681ddfd0083"><td class="memTemplParams" colspan="2">template&lt;typename Prop&gt; <br />
 requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9ea55b0f2dd9a12cf211dd6da212">Utilities::shouldStack</a>&lt;T&gt;())</td></tr>
 <tr class="memitem:a750674dc205c0def361f7681ddfd0083"><td class="memTemplItemLeft" align="right" valign="top">const Prop &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a750674dc205c0def361f7681ddfd0083">peek</a> (Prop T::*prop)</td></tr>
+<tr class="memdesc:a750674dc205c0def361f7681ddfd0083"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
 <tr class="separator:a750674dc205c0def361f7681ddfd0083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cb46b868074eff3a8fd915d2752f9d" id="r_a58cb46b868074eff3a8fd915d2752f9d"><td class="memTemplParams" colspan="2">template&lt;typename... Props&gt; <br />
 requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9ea55b0f2dd9a12cf211dd6da212">Utilities::shouldStack</a>&lt;T&gt;())</td></tr>
 <tr class="memitem:a58cb46b868074eff3a8fd915d2752f9d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a58cb46b868074eff3a8fd915d2752f9d">peek</a> (<a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a> behavior, Props T::*...props)</td></tr>
+<tr class="memdesc:a58cb46b868074eff3a8fd915d2752f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
 <tr class="separator:a58cb46b868074eff3a8fd915d2752f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82490a3aa87d556dbf53c29568342c09" id="r_a82490a3aa87d556dbf53c29568342c09"><td class="memTemplParams" colspan="2">template&lt;typename... Props&gt; <br />
 requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9ea55b0f2dd9a12cf211dd6da212">Utilities::shouldStack</a>&lt;T&gt;())</td></tr>
 <tr class="memitem:a82490a3aa87d556dbf53c29568342c09"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a82490a3aa87d556dbf53c29568342c09">peek</a> (Props T::*...props)</td></tr>
+<tr class="memdesc:a82490a3aa87d556dbf53c29568342c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
 <tr class="separator:a82490a3aa87d556dbf53c29568342c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addae67381922eea92ab6ca0a328df39d" id="r_addae67381922eea92ab6ca0a328df39d"><td class="memTemplParams" colspan="2">template&lt;typename Func&gt; <br />
 requires std::invocable&lt;Func, const T &amp;&gt;</td></tr>
@@ -203,9 +207,10 @@ requires std::invocable&lt;Func, T &amp;, const T &amp;&gt;</td></tr>
 <tr class="memitem:aeea469ef16be770cf5e5970294e1b26c" id="r_aeea469ef16be770cf5e5970294e1b26c"><td class="memTemplParams" colspan="2">template&lt;typename Func&gt; <br />
 requires std::invocable&lt;Func, const T &amp;&gt;</td></tr>
 <tr class="memitem:aeea469ef16be770cf5e5970294e1b26c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aeea469ef16be770cf5e5970294e1b26c">remove</a> (Func &amp;&amp;fn)</td></tr>
-<tr class="memdesc:aeea469ef16be770cf5e5970294e1b26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove components specified by the results of the function argument.  <br /></td></tr>
+<tr class="memdesc:aeea469ef16be770cf5e5970294e1b26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove component if it evaluates to true.  <br /></td></tr>
 <tr class="separator:aeea469ef16be770cf5e5970294e1b26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70af64b35f17492b5831e0d133780209" id="r_a70af64b35f17492b5831e0d133780209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70af64b35f17492b5831e0d133780209">operator bool</a> () const</td></tr>
+<tr class="memdesc:a70af64b35f17492b5831e0d133780209"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate truthiness based on the existence of stored values.  <br /></td></tr>
 <tr class="separator:a70af64b35f17492b5831e0d133780209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -363,7 +368,7 @@ requires (std::invocable&lt;std::decay_t&lt;decltype(fn)&gt;, const T &amp;&gt; 
 </table>
 </div><div class="memdoc">
 
-<p>Allows for creating new derived data from the component. </p>
+<p>NON-STACKED COMPONENT ONLY! Allows for creating new derived data from the component. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Function</td><td></td></tr>
@@ -407,6 +412,16 @@ requires (std::invocable&lt;std::decay_t&lt;decltype(fn)&gt;, const T &amp;&gt; 
 </table>
 </div><div class="memdoc">
 
+<p>NON-STACKED COMPONENT ONLY! Allows for creating new derived data from the component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Function</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a></td><td>pipeline behavior</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Derived data instance </dd></dl>
+
 </div>
 </div>
 <a id="addae67381922eea92ab6ca0a328df39d" name="addae67381922eea92ab6ca0a328df39d"></a>
@@ -449,7 +464,7 @@ requires std::invocable&lt;Func, const T &amp;&gt;</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper containing the filtered results </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper instance containing the filtered results </dd></dl>
 
 </div>
 </div>
@@ -493,7 +508,7 @@ requires std::invocable&lt;Func, const T &amp;&gt;</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper containing the result </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper instance containing the found results </dd></dl>
 
 </div>
 </div>
@@ -531,7 +546,7 @@ template&lt;typename T&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper containing the result </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper instance containing the first component </dd></dl>
 
 </div>
 </div>
@@ -567,7 +582,7 @@ requires std::invocable&lt;Func, const T &amp;&gt;</div>
 </table>
 </div><div class="memdoc">
 
-<p>Read-only each function. </p>
+<p>Read-only for each function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Function</td><td></td></tr>
@@ -612,7 +627,7 @@ template&lt;typename T&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper containing the result </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper instance containing the last component </dd></dl>
 
 </div>
 </div>
@@ -644,7 +659,7 @@ requires std::invocable&lt;Func, T &amp;&gt;</div>
 </table>
 </div><div class="memdoc">
 
-<p>Standard read/write each function. </p>
+<p>Standard read/write for each function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Function</td><td></td></tr>
@@ -680,6 +695,8 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Evaluate truthiness based on the existence of stored values. </p>
+
 </div>
 </div>
 <a id="a750674dc205c0def361f7681ddfd0083" name="a750674dc205c0def361f7681ddfd0083"></a>
@@ -710,6 +727,16 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
 </table>
 </div><div class="memdoc">
 
+<p>NON-STACKED COMPONENT ONLY! - Extract a value as readonly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T::Prop</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a></td><td>pipeline behavior</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Component property reference </dd></dl>
+
 </div>
 </div>
 <a id="a82490a3aa87d556dbf53c29568342c09" name="a82490a3aa87d556dbf53c29568342c09"></a>
@@ -739,6 +766,16 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>NON-STACKED COMPONENT ONLY! - Extract a value as readonly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T::Prop</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a></td><td>pipeline behavior</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Container of references to component properties </dd></dl>
 
 </div>
 </div>
@@ -774,7 +811,7 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
 </table>
 </div><div class="memdoc">
 
-<p>Extract a value as readonly FROM A NON-STACKED COMPONENT. </p>
+<p>NON-STACKED COMPONENT ONLY! - Extract a value as readonly. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">T::Prop</td><td></td></tr>
@@ -782,7 +819,7 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Property reference </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Component property reference </dd></dl>
 
 </div>
 </div>
@@ -817,6 +854,16 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>NON-STACKED COMPONENT ONLY! - Extract a value as readonly. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T::Prop</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a></td><td>pipeline behavior</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Container of references to component properties </dd></dl>
 
 </div>
 </div>
@@ -861,12 +908,12 @@ requires std::invocable&lt;Func, T &amp;, const T &amp;&gt;</div>
 <p>Creates an instance of the component with the reduced properties</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Function</td><td></td></tr>
+    <tr><td class="paramname">Reducer</td><td>function </td></tr>
     <tr><td class="paramname"><a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a></td><td>pipeline behavior</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Accumulator - Reduced Component instance </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reduced Component instance </dd></dl>
 
 </div>
 </div>
@@ -907,7 +954,7 @@ requires std::invocable&lt;Func, T &amp;, const T &amp;&gt;</div>
 <p>IMPORTANT: THE COMPONENT REQUIRES DEFAULT CONSTRUCTOR ARGUMENTS TO CREATE THE NEW INSTANCE, AND THOSE ARGUMENTS SHOULD PROBABLY BE 0/FALSY OR ELSE COULD LEAD TO UNEXPECTED BEHAVIOR</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Function</td><td></td></tr>
+    <tr><td class="paramname">Reducer</td><td>function </td></tr>
     <tr><td class="paramname"><a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a></td><td>pipeline behavior</td></tr>
   </table>
   </dd>
@@ -944,10 +991,10 @@ requires std::invocable&lt;Func, const T &amp;&gt;</div>
 </table>
 </div><div class="memdoc">
 
-<p>Remove components specified by the results of the function argument. </p>
+<p>Remove component if it evaluates to true. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">Function</td><td></td></tr>
+    <tr><td class="paramname">Removal</td><td>check function </td></tr>
   </table>
   </dd>
 </dl>
@@ -994,7 +1041,7 @@ requires std::invocable&lt;Func, const T &amp;, const T &amp;&gt;</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper containing the sorted results </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>New <a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a> wrapper instance containing the sorted components </dd></dl>
 
 </div>
 </div>
