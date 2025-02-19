@@ -137,7 +137,10 @@ Documentation</h1>
 </ul>
 <h1><a class="anchor" id="autotoc_md9"></a>
 Example Usage</h1>
-<p>Creating entities: </p><div class="fragment"><div class="line"><span class="keyword">struct </span>PlayerComponent : <a class="code hl_struct" href="structECS_1_1Tags_1_1Unique.html">ECS::Tags::Unique</a> {};</div>
+<p>Creating entities: </p><div class="fragment"><div class="line"><span class="keyword">using </span>EntityId = int;</div>
+<div class="line"><span class="keyword">using </span>ComponentManager = <a class="code hl_typedef" href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager&lt;EntityId&gt;</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">struct </span>PlayerComponent : <a class="code hl_struct" href="structECS_1_1Tags_1_1Unique.html">ECS::Tags::Unique</a> {};</div>
 <div class="line"><span class="keyword">struct </span>PositionComponent : <a class="code hl_struct" href="structECS_1_1Tags_1_1NoStack.html">ECS::Tags::NoStack</a> {</div>
 <div class="line">    <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y;</div>
 <div class="line">    PositionComponent(<span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y) : x(_x), y(_y) {};</div>
@@ -147,26 +150,27 @@ Example Usage</h1>
 <div class="line">    MovementComponent(<span class="keywordtype">float</span> _vX, <span class="keywordtype">float</span> _vY) : vX(_vX), vY(_vY) {};</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> createPlayer(<a class="code hl_typedef" href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager</a> &amp;cm, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) {</div>
-<div class="line">    EntityId <span class="keywordtype">id</span> = cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a63d37003ce745e79c55c5e56384550fe">createEntity</a>();</div>
-<div class="line">    cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">add</a>&lt;PlayerComponent&gt;(id);</div>
-<div class="line">    cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">add</a>&lt;PositionComponent&gt;(id, x, y);</div>
-<div class="line">    cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">add</a>&lt;MovementComponent&gt;(id, 16.0f, 16.0f);</div>
+<div class="line"><span class="keywordtype">void</span> createPlayer(ComponentManager &amp;cm, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) {</div>
+<div class="line">    EntityId <span class="keywordtype">id</span> = cm.createEntity();</div>
+<div class="line">    cm.add&lt;PlayerComponent&gt;(id);</div>
+<div class="line">    cm.add&lt;PositionComponent&gt;(id, x, y);</div>
+<div class="line">    cm.add&lt;MovementComponent&gt;(id, 16.0f, 16.0f);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> createEnemy(<a class="code hl_typedef" href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager</a> &amp;cm, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) {</div>
-<div class="line">    EntityId <span class="keywordtype">id</span> = cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a63d37003ce745e79c55c5e56384550fe">createEntity</a>();</div>
-<div class="line">    cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">add</a>&lt;PositionComponent&gt;(id, x, y);</div>
-<div class="line">    cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">add</a>&lt;MovementComponent&gt;(id, 16.0f, 16.0f);</div>
+<div class="line"><span class="keywordtype">void</span> createEnemy(ComponentManager &amp;cm, <span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) {</div>
+<div class="line">    EntityId <span class="keywordtype">id</span> = cm.createEntity();</div>
+<div class="line">    cm.add&lt;PositionComponent&gt;(id, x, y);</div>
+<div class="line">    cm.add&lt;MovementComponent&gt;(id, 16.0f, 16.0f);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a2f16aafb041b883455cc892613e7e76a"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a2f16aafb041b883455cc892613e7e76a">ECS::internal::EntityComponentManager::add</a></div><div class="ttdeci">void add(EntityId eId, Args... args)</div><div class="ttdoc">Constructs and add a component to a set by entity id.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:74</div></div>
-<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a63d37003ce745e79c55c5e56384550fe"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a63d37003ce745e79c55c5e56384550fe">ECS::internal::EntityComponentManager::createEntity</a></div><div class="ttdeci">EntityId createEntity()</div><div class="ttdoc">Creates a new unique entity id.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:57</div></div>
 <div class="ttc" id="anamespaceECS_html_ab0abd5d7309662b53fd28fc08c860c22"><div class="ttname"><a href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager</a></div><div class="ttdeci">internal::EntityComponentManager&lt; EntityId &gt; Manager</div><div class="ttdoc">The main entry point into the ECS. Used to add, query, and remove components and component sets,...</div><div class="ttdef"><b>Definition</b> ecs.hpp:19</div></div>
 <div class="ttc" id="astructECS_1_1Tags_1_1NoStack_html"><div class="ttname"><a href="structECS_1_1Tags_1_1NoStack.html">ECS::Tags::NoStack</a></div><div class="ttdoc">Prevents components from stacking to allow for only a single instance of a component per entity....</div><div class="ttdef"><b>Definition</b> tags.hpp:32</div></div>
 <div class="ttc" id="astructECS_1_1Tags_1_1Unique_html"><div class="ttname"><a href="structECS_1_1Tags_1_1Unique.html">ECS::Tags::Unique</a></div><div class="ttdoc">Will enforce that only a single instance of a component exists at any given time. Also provides a mor...</div><div class="ttdef"><b>Definition</b> tags.hpp:51</div></div>
-</div><!-- fragment --><p> Some system performing updates on entities </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> update(<a class="code hl_typedef" href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager</a> &amp;cm)</div>
+</div><!-- fragment --><p> Some system performing updates on entities </p><div class="fragment"><div class="line"><span class="keyword">using </span>EntityId = int;</div>
+<div class="line"><span class="keyword">using </span>ComponentManager = <a class="code hl_typedef" href="namespaceECS.html#ab0abd5d7309662b53fd28fc08c860c22">ECS::Manager&lt;EntityId&gt;</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> update(ComponentManager &amp;cm)</div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">auto</span> group = cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#a2d25f9c3e07b337792cc6d425eae67f5">getGroup</a>&lt;MovementComponent, PositionComponent&gt;();</div>
+<div class="line">    <span class="keyword">auto</span> group = cm.getGroup&lt;MovementComponent, PositionComponent&gt;();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Basic example for how to access and mutate components.</span></div>
 <div class="line">    <span class="comment">// In this case, each entity can only have a single instance of each components</span></div>
@@ -193,15 +197,13 @@ Example Usage</h1>
 <div class="line">    });</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Perhaps some special operation needs to happen for the unique player</span></div>
-<div class="line">    <span class="keyword">auto</span> [playerId, playerComponent] = cm.<a class="code hl_function" href="classECS_1_1internal_1_1EntityComponentManager.html#ad8ab0d861c88198dfdf1e4437f0c523a">getUnique</a>&lt;PlayerComponent&gt;();</div>
+<div class="line">    <span class="keyword">auto</span> [playerId, playerComponent] = cm.getUnique&lt;PlayerComponent&gt;();</div>
 <div class="line">    group.each([&amp;](EntityId eId, <span class="keyword">auto</span> MovementComponent &amp;moveComps, <span class="keyword">auto</span> PositionComponent &amp;posComps)</div>
 <div class="line">        <span class="comment">// Do movement update stuff from before</span></div>
 <div class="line">        <span class="keywordflow">if</span> (eId == playerId)</div>
 <div class="line">            <span class="comment">// Do something special, possibly using the movement/position components</span></div>
 <div class="line">    });</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_a2d25f9c3e07b337792cc6d425eae67f5"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#a2d25f9c3e07b337792cc6d425eae67f5">ECS::internal::EntityComponentManager::getGroup</a></div><div class="ttdeci">ComponentSetGroup&lt; Ts... &gt; getGroup()</div><div class="ttdoc">Find overlapping entities for the specified types.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:217</div></div>
-<div class="ttc" id="aclassECS_1_1internal_1_1EntityComponentManager_html_ad8ab0d861c88198dfdf1e4437f0c523a"><div class="ttname"><a href="classECS_1_1internal_1_1EntityComponentManager.html#ad8ab0d861c88198dfdf1e4437f0c523a">ECS::internal::EntityComponentManager::getUnique</a></div><div class="ttdeci">std::pair&lt; EntityId, Components&lt; T &gt; &amp; &gt; getUnique()</div><div class="ttdoc">Get a specified unique component.</div><div class="ttdef"><b>Definition</b> entity_component_manager.hpp:154</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md10"></a>
 Installation</h1>
 <p>Run the build script to run the automated tests: </p><div class="fragment"><div class="line">$ bash build_and_test.sh</div>
