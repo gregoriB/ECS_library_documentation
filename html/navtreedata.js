@@ -26,6 +26,11 @@ var NAVTREE =
 [
   [ "ECS LIBRARY", "index.html", [
     [ "ECS Library (pending rename)", "index.html", "index" ],
+    [ "TODOs", "md_dev_2TODO.html", [
+      [ "Performance", "md_dev_2TODO.html#autotoc_md1", null ],
+      [ "Features", "md_dev_2TODO.html#autotoc_md2", null ],
+      [ "Tasks", "md_dev_2TODO.html#autotoc_md3", null ]
+    ] ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -66,7 +71,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"namespaceECS_1_1internal_1_1Utilities.html"
+"namespaceECS_1_1Tags.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

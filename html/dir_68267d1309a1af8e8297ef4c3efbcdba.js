@@ -5,6 +5,7 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "components_iterator.hpp", "components__iterator_8hpp.html", "components__iterator_8hpp" ],
     [ "core.hpp", "core_8hpp.html", null ],
     [ "entity_component_manager.hpp", "entity__component__manager_8hpp.html", "entity__component__manager_8hpp" ],
+    [ "grouping.hpp", "grouping_8hpp.html", "grouping_8hpp" ],
     [ "macros.hpp", "macros_8hpp.html", "macros_8hpp" ],
     [ "sparse_set.hpp", "sparse__set_8hpp.html", "sparse__set_8hpp" ],
     [ "tags.hpp", "tags_8hpp.html", "tags_8hpp" ],

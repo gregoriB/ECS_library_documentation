@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "_abcdefghilmnoprstu~",
   1: "bcdegnrstu",
   2: "e",
-  3: "bcemrstu",
+  3: "bcegmrstu",
   4: "_acdefghilmoprstu~",
   5: "cdeimt",
   6: "bcegmst",
@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   8: "demnpst",
   9: "eg",
   10: "e",
-  11: "delpr",
+  11: "delprt",
   12: "r"
 };
 

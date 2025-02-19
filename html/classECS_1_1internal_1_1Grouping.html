@@ -112,7 +112,7 @@ $(function(){initNavTree('classECS_1_1internal_1_1Grouping.html',''); initResiza
 <p>A grouping of entities which have all of the specified components.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="entity__component__manager_8hpp_source.html">entity_component_manager.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="grouping_8hpp_source.html">grouping.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -225,6 +225,7 @@ template&lt;typename Func&gt; </div>
 </div><div class="memdoc">
 
 <p>Iterate over component set and pass the entity components into the function. </p>
+<p>The function argument can optionally return a bool to determine the loop-breaking behavior. A false return value is a break.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Function</td><td>which accepts the entity id and component types </td></tr>
@@ -325,7 +326,7 @@ template&lt;typename EntityId, typename... Ts&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/<a class="el" href="entity__component__manager_8hpp_source.html">entity_component_manager.hpp</a></li>
+<li>src/<a class="el" href="grouping_8hpp_source.html">grouping.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
