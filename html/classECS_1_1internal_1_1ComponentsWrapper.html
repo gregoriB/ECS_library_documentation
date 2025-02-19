@@ -163,16 +163,16 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
 <tr class="memitem:a750674dc205c0def361f7681ddfd0083"><td class="memTemplItemLeft" align="right" valign="top">const Prop &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a750674dc205c0def361f7681ddfd0083">peek</a> (Prop T::*prop)</td></tr>
 <tr class="memdesc:a750674dc205c0def361f7681ddfd0083"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
 <tr class="separator:a750674dc205c0def361f7681ddfd0083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58cb46b868074eff3a8fd915d2752f9d" id="r_a58cb46b868074eff3a8fd915d2752f9d"><td class="memTemplParams" colspan="2">template&lt;typename... Props&gt; <br />
+<tr class="memitem:ab57e33b398252e5666f5b31680f25c5f" id="r_ab57e33b398252e5666f5b31680f25c5f"><td class="memTemplParams" colspan="2">template&lt;typename... Props&gt; <br />
 requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9ea55b0f2dd9a12cf211dd6da212">Utilities::shouldStack</a>&lt;T&gt;())</td></tr>
-<tr class="memitem:a58cb46b868074eff3a8fd915d2752f9d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a58cb46b868074eff3a8fd915d2752f9d">peek</a> (<a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a> behavior, Props T::*...props)</td></tr>
-<tr class="memdesc:a58cb46b868074eff3a8fd915d2752f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
-<tr class="separator:a58cb46b868074eff3a8fd915d2752f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82490a3aa87d556dbf53c29568342c09" id="r_a82490a3aa87d556dbf53c29568342c09"><td class="memTemplParams" colspan="2">template&lt;typename... Props&gt; <br />
+<tr class="memitem:ab57e33b398252e5666f5b31680f25c5f"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; const Props &amp;... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab57e33b398252e5666f5b31680f25c5f">peek</a> (<a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a> behavior, Props T::*...props)</td></tr>
+<tr class="memdesc:ab57e33b398252e5666f5b31680f25c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
+<tr class="separator:ab57e33b398252e5666f5b31680f25c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e377d7ddc964b80f0e83c660de359e" id="r_ae9e377d7ddc964b80f0e83c660de359e"><td class="memTemplParams" colspan="2">template&lt;typename... Props&gt; <br />
 requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9ea55b0f2dd9a12cf211dd6da212">Utilities::shouldStack</a>&lt;T&gt;())</td></tr>
-<tr class="memitem:a82490a3aa87d556dbf53c29568342c09"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a82490a3aa87d556dbf53c29568342c09">peek</a> (Props T::*...props)</td></tr>
-<tr class="memdesc:a82490a3aa87d556dbf53c29568342c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
-<tr class="separator:a82490a3aa87d556dbf53c29568342c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e377d7ddc964b80f0e83c660de359e"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; const Props &amp;... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae9e377d7ddc964b80f0e83c660de359e">peek</a> (Props T::*...props)</td></tr>
+<tr class="memdesc:ae9e377d7ddc964b80f0e83c660de359e"><td class="mdescLeft">&#160;</td><td class="mdescRight">NON-STACKED COMPONENT ONLY! - Extract a value as readonly.  <br /></td></tr>
+<tr class="separator:ae9e377d7ddc964b80f0e83c660de359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addae67381922eea92ab6ca0a328df39d" id="r_addae67381922eea92ab6ca0a328df39d"><td class="memTemplParams" colspan="2">template&lt;typename Func&gt; <br />
 requires std::invocable&lt;Func, const T &amp;&gt;</td></tr>
 <tr class="memitem:addae67381922eea92ab6ca0a328df39d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="#a97eb48c8dfa29d705d1c055bb0cdd7d0">Components</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#addae67381922eea92ab6ca0a328df39d">filter</a> (Func &amp;&amp;fn, <a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a> behavior=<a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9a5b39c8b553c821e7cddc6da64b5bd2ee">Transformation::DEFAULT</a>)</td></tr>
@@ -735,12 +735,12 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Component property reference </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Component property const reference </dd></dl>
 
 </div>
 </div>
-<a id="a82490a3aa87d556dbf53c29568342c09" name="a82490a3aa87d556dbf53c29568342c09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82490a3aa87d556dbf53c29568342c09">&#9670;&#160;</a></span>peek() <span class="overload">[2/4]</span></h2>
+<a id="ae9e377d7ddc964b80f0e83c660de359e" name="ae9e377d7ddc964b80f0e83c660de359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e377d7ddc964b80f0e83c660de359e">&#9670;&#160;</a></span>peek() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -754,7 +754,7 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classECS_1_1internal_1_1ComponentsWrapper.html">ECS::internal::ComponentsWrapper</a>&lt; T &gt;::peek </td>
+          <td class="memname">std::tuple&lt; const Props &amp;... &gt; <a class="el" href="classECS_1_1internal_1_1ComponentsWrapper.html">ECS::internal::ComponentsWrapper</a>&lt; T &gt;::peek </td>
           <td>(</td>
           <td class="paramtype">Props T::*...</td>          <td class="paramname"><span class="paramname"><em>props</em></span></td><td>)</td>
           <td></td>
@@ -775,7 +775,7 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Container of references to component properties </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Container of const references to component properties </dd></dl>
 
 </div>
 </div>
@@ -819,12 +819,12 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Component property reference </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Component property const reference </dd></dl>
 
 </div>
 </div>
-<a id="a58cb46b868074eff3a8fd915d2752f9d" name="a58cb46b868074eff3a8fd915d2752f9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58cb46b868074eff3a8fd915d2752f9d">&#9670;&#160;</a></span>peek() <span class="overload">[4/4]</span></h2>
+<a id="ab57e33b398252e5666f5b31680f25c5f" name="ab57e33b398252e5666f5b31680f25c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab57e33b398252e5666f5b31680f25c5f">&#9670;&#160;</a></span>peek() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -838,7 +838,7 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="classECS_1_1internal_1_1ComponentsWrapper.html">ECS::internal::ComponentsWrapper</a>&lt; T &gt;::peek </td>
+          <td class="memname">std::tuple&lt; const Props &amp;... &gt; <a class="el" href="classECS_1_1internal_1_1ComponentsWrapper.html">ECS::internal::ComponentsWrapper</a>&lt; T &gt;::peek </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceECS_1_1internal.html#a46e949697c4777021439da3384e95fe9">Transformation</a></td>          <td class="paramname"><span class="paramname"><em>behavior</em></span>, </td>
         </tr>
@@ -863,7 +863,7 @@ requires (!<a class="el" href="namespaceECS_1_1internal_1_1Utilities.html#ab15c9
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Container of references to component properties </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Container of const references to component properties </dd></dl>
 
 </div>
 </div>
