@@ -177,7 +177,7 @@ Example Usage</h1>
 <div class="line">    <span class="comment">// However, in the case where these components were given the &quot;Stack&quot; tag, thes</span></div>
 <div class="line">    <span class="comment">// .inspect and .mutate methods would iterate over every instance and perform the operation</span></div>
 <div class="line"> </div>
-<div class="line">    group.each([&amp;](EntityId eId, <span class="keyword">auto</span> MovementComponent &amp;moveComps, <span class="keyword">auto</span> PositionComponent &amp;posComps)</div>
+<div class="line">    group.each([&amp;](EntityId eId, <span class="keyword">auto</span> &amp;moveComps, <span class="keyword">auto</span> &amp;posComps)</div>
 <div class="line">        moveComps.inspect([&amp;](<span class="keyword">const</span> MovementComponent &amp;moveComp) {</div>
 <div class="line">            posComps.mutate([&amp;](PositionComponent &amp;posComp) {</div>
 <div class="line">                posComp.x += moveComp.vX;</div>
@@ -188,7 +188,7 @@ Example Usage</h1>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Alternatively since the movement component is not stacked, </span></div>
 <div class="line">    <span class="comment">// the peek method can be used to access the values</span></div>
-<div class="line">    group.each([&amp;](EntityId eId, <span class="keyword">auto</span> MovementComponent &amp;moveComps, <span class="keyword">auto</span> PositionComponent &amp;posComps)</div>
+<div class="line">    group.each([&amp;](EntityId eId, <span class="keyword">auto</span> &amp;moveComps, <span class="keyword">auto</span> &amp;posComps)</div>
 <div class="line">        <span class="keyword">auto</span> [vX, vY] = moveComps.peek(&amp;MovementComponent::vX, &amp;MovementComponent::vY);</div>
 <div class="line">        posComps.mutate([&amp;](PositionComponent &amp;posComp) {</div>
 <div class="line">            posComp.x += moveComp.vX;</div>
@@ -198,7 +198,7 @@ Example Usage</h1>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Perhaps some special operation needs to happen for the unique player</span></div>
 <div class="line">    <span class="keyword">auto</span> [playerId, playerComponent] = cm.getUnique&lt;PlayerComponent&gt;();</div>
-<div class="line">    group.each([&amp;](EntityId eId, <span class="keyword">auto</span> MovementComponent &amp;moveComps, <span class="keyword">auto</span> PositionComponent &amp;posComps)</div>
+<div class="line">    group.each([&amp;](EntityId eId, <span class="keyword">auto</span> &amp;moveComps, <span class="keyword">auto</span> &amp;posComps)</div>
 <div class="line">        <span class="comment">// Do movement update stuff from before</span></div>
 <div class="line">        <span class="keywordflow">if</span> (eId == playerId)</div>
 <div class="line">            <span class="comment">// Do something special, possibly using the movement/position components</span></div>
